@@ -9,9 +9,7 @@ It interpolates both lists onto a common grid and fuses them at an "optimal" poi
 For more information, see Supporting Information in the original publication.
 
 Usage: 
-
     `joinforces <file1> <file2>`
-   
 The two arguments are the names of the files containing reaction coordinates and constraint forces.
 
 ## aver_lambda.f90
@@ -22,9 +20,7 @@ the average constraint force for this reaction coordinate. This procedure has to
 in order to finally calculate the free energy with joinforces.
 
 Usage:
-
     `aver_lambda <file> [nstep] [end-coord]`
-	
 Arguments in <> are necessary, arguments in [ ] are optional.
 * &lt;file> is the filename of the lammps TMD output,
 * [nstep] is the optional maximum number of steps in the TMD output to be evaluated,
@@ -32,5 +28,4 @@ Arguments in <> are necessary, arguments in [ ] are optional.
 
 
 Both programs can be compiled with any Fortran  compiler, e.g.
-
     `gfortran -o joinforces joinforces.f90`
