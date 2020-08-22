@@ -10,6 +10,7 @@ For more information, see Supporting Information in the original publication.
 
 Usage: 
     `joinforces <file1> <file2>`
+
 The two arguments are the names of the files containing reaction coordinates and constraint forces.
 
 ## aver_lambda.f90
@@ -21,6 +22,7 @@ in order to finally calculate the free energy with joinforces.
 
 Usage:
     `aver_lambda <file> [nstep] [end-coord]`
+
 Arguments in <> are necessary, arguments in [ ] are optional.
 * &lt;file> is the filename of the lammps TMD output,
 * [nstep] is the optional maximum number of steps in the TMD output to be evaluated,
